@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+/* Style dasar body */
+body {
+    background-color: #f4f4f4; /* Warna latar lembut */
+    color: #333; /* Warna teks */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+
+/* -------------------- Navbar Styles -------------------- */
+.navbar {
+    width: 100%;
+    padding: 12px 40px;
+    background: #ff0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.brand .title {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.brand .subtitle {
+    font-size: 12px;
+    color: #fff;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #ffe9e9;
+}
+
+/* Dropdown Style */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(255, 0, 0);
+    list-style: none;
+    min-width: 150px;
+    border-radius: 6px;
+    padding: 8px 0;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+.dropdown-menu a:hover {
+    background: #a00000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(2px);
+}
+/* TITLE */
+.gallery-title {
+    text-align: center;
+    margin: 120px 0;
+}
+
+.gallery-title h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.gallery-title p {
+    color: #000000;
+    margin-top: 5px;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    width: 85%;
+    margin: 225px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 1px;
+}
+
+.gallery-grid img {
+    width: 374px;
+    border-radius: 12px;
+    background: #ddd;
+    height: 484px;
+    object-fit: cover;
+}
+
+/* footer */
+/* --- FOOTER STYLES (Optimalisasi Flexbox & Responsif) --- */
+
+footer {
+    width: 100%;
+    min-height: 324px;
+    /* top: 1467px; <--- Hapus atau sesuaikan jika footer tidak di posisi absolut */
+    background: url('bg-image.jpeg') center / cover no-repeat;
+    color: #FFFFFF;
+    position: relative; /* Gunakan relative jika tidak ada elemen lain di bawahnya */
+    padding: 40px 0;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.7); /* Overlay merah 70% opacity */
+    z-index: 1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Diperkecil agar mirip gambar, sesuaikan jika perlu */
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3; /* Pastikan konten footer di atas overlay */
+    align-items: flex-start; /* Sejajarkan item ke atas */
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 250px;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam lebar */
+}
+
+/* Kolom 1: Kontak */
+.footer-col.kontak {
+    flex: 1.5; /* Beri kolom kontak lebih banyak ruang */
+    min-width: 350px; /* Pastikan lebar minimum cukup */
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-footer .title-footer {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF; /* Warna putih untuk teks brand */
+    white-space: nowrap; /* Mencegah teks terlalu panjang pecah baris */
+}
+
+.brand-footer .subtitle-footer {
+    font-size: 13px;
+    color: #FFFFFF; /* Warna putih untuk subtitle */
+}
+
+.contact-info {
+    font-style: normal;
+    line-height: 1.5;
+    margin-top: 15px; /* Sesuaikan margin top */
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* JUDUL KOLOM */
+.col-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffea00; /* Warna kuning emas */
+    margin-bottom: 20px;
+    white-space: nowrap; /* Mencegah judul pecah baris */
+}
+
+/* Kolom 2: Links */
+.footer-col.links {
+    flex: 1; /* Ruang standar */
+}
+
+.footer-col.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col.links a {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+    font-size: 0.95em;
+    transition: color 0.2s;
+}
+
+.footer-col.links a:hover {
+    color: #ffea00;
+}
+
+/* Kolom 3: Kritik & Saran */
+.footer-col.kritik {
+    flex: 1.2; /* Beri kolom kritik sedikit lebih banyak ruang */
+}
+
+.footer-col.kritik p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* -------------------- RESPONSIVE STYLES -------------------- */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Pusatkan teks pada mode mobile */
+    }
+
+    .footer-col {
+        min-width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-col:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .logo-group {
+        justify-content: center;
+    }
+
+    .footer-col.links ul {
+        padding: 0;
+    }
+    
+    .brand-footer .title-footer,
+    .brand-footer .subtitle-footer,
+    .col-title {
+        white-space: normal; /* Biarkan teks pecah baris di mobile */
+    }
+}
