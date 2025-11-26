@@ -1,29 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <!-- link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/kontak.css">
-</head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css">
+<title>Kontak Lab Biosain</title>
 <body>
-    <!-- navbar -->
-    <div data-include="../partials/navbar.html"></div>
 
-    <!-- isi -->
-    <main class="container" style="margin-top:100px">
-        <h1>kontak</h1>
-    </main>
-    <!-- footer -->
-    <div data-include="../partials/footer.html"></div>
+<div class="navbar">
+    <div class="navbar-logo">
+        <img src="logo.png">
+        <div>
+            <strong>Pusat UPA Laboratorium Biosain</strong><br>
+            Politeknik Negeri Jember
+        </div>
+    </div>
 
-    <!-- Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/components.js"></script>
+    <div class="navbar-menu">
+        <a href="#">Beranda</a>
+        <a href="#">Profil  ▼</a>
+        <a href="#">Layanan   ▼</a>
+        <a href="#">Publikasi  ▼</a>
+        <a href="#">Kontak</a>
+    </div>
+</div>
+
+<!-- TITLE -->
+<div class="title">Kontak Lab</div>
+<div class="subtitle">Hubungi kami untuk informasi lebih lanjut</div>
+
+<!-- FORM + BUTTONS -->
+<div class="contact-container">
+    <div class="form-box">
+        <input type="text" placeholder="Masukkan nama">
+        <input type="email" placeholder="Masukkan email">
+        <textarea placeholder="Sampaikan pesan anda..."></textarea>
+        <button class="submit-btn">Kirim</button>
+    </div>
+
+    <div class="wa-box">
+        <button class="wa-btn">Wa Admin (Sampel & Sertifikat Hasil)</button>
+        <button class="wa-btn">Wa Admin (Sewa Laboratorium)</button>
+        <button class="wa-btn">Wa Pelayanan Pelatihan & Konsultasi</button>
+
+        <img class="wa-img" src="biosains.polije.2.png">
+    </div>
+</div>
+
+<!-- HUBUNGI KAMI -->
+<div class="hubungi-section">
+    <h2>Hubungi Kami</h2>
+
+    <div class="hubungi-container">
+
+        <!-- MAP -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.437751756996!2d113.72109987460317!3d-8.168944983896154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd696f7ad9dd98f%3A0x8e302ff628f6ba26!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="300" height="310" style="border: 10px; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+
+            <!-- TEXT -->
+        <div class="hubungi-text">
+            <strong>Kantor:</strong><br>
+            Jl. Mastrip No.164, Lingkungan Panji, Tegalgedhe, Kec. Sumbersari,<br>
+            Kabupaten Jember, Jawa Timur 68121<br><br>
+
+            <strong>Jadwal:</strong><br>
+            Senin - Jumat<br><br>
+
+            <strong>Kontak Whatsapp:</strong><br>
+            089123456789<br><br>
+
+            <strong>Email:</strong><br>
+            labbiosain@polije.ac.id<br><br>
+
+            <strong>Website:</strong><br>
+            https://sites.polije.ac.id/labbiosain
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-col kontak">
+            <div class="logo-group">
+                <img src="logo.png" alt="Logo UPA Lab Biosain" class="footer-logo"> 
+                <div class="brand-footer">
+                    <span class="title-footer">Pusat UPA Laboratorium Biosain</span>
+                    <span class="subtitle-footer">Politeknik Negeri Jember</span>
+                </div>
+            </div>
+            
+            <address class="contact-info">
+                Jl. Mastrip No.164, Lingkungan Panji, Tegalgede, Kec. <br>
+                Sumbersari, Kabupaten Jember, Jawa Timur 68121
+            </address>
+
+            <div class="contact-details">
+                <p>Telephone: +62 341 571708</p>
+                <p>Fax: +62 341 586415</p>
+                <p>Email: biosain@polije.ac.id</p>
+                <p>Whatsapp: +62 821 4290 1215</p>
+            </div>
+        </div>
+
+        <div class="footer-col links">
+            <h3 class="col-title">Tentang Lab</h3>
+            <ul>
+                <li><a href="#">Sejarah</a></li>
+                <li><a href="#">Visi Misi</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Fasilitas & Lab</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col kritik">
+            <h3 class="col-title">Kritik & Saran</h3>
+            <p>
+                "Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan, silakan hubungi kami melalui kontak form email kami."
+            </p>
+        </div>
+    </div>
+</footer>
+
 </body>
-
 </html>
