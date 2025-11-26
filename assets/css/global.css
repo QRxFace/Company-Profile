@@ -1,0 +1,163 @@
+        /* Warna Tema Kustom */
+        :root {
+            --primary-red: #ff0000;
+            --primary-dark: #1D3557; /* Accent Blue di kode lama */
+            --primary-light: #ffffff;
+            --yellow-accent: #ffea00;
+            --soft-bg: #f4f4f4;
+            --text-dark: #333333;
+        }
+
+        /* Navbar Kustom */
+    /* Dropdown menu merah */
+.navbar-custom {
+    background-color: var(--primary-red) !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Saat scroll */
+.navbar-custom.scrolled {
+    background-color: var(--primary-dark) !important; /* warna gelapnya */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Teks Navbar */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: var(--primary-light) !important;
+}
+
+/* Hover kuning */
+.navbar-custom .nav-link:hover {
+    color: var(--yellow-accent) !important;
+}
+
+/* Dropdown */
+.navbar-custom .dropdown-menu {
+    --bs-dropdown-bg: var(--primary-red) !important;
+}
+
+.navbar-custom .dropdown-item {
+    color: #fff !important;
+}
+
+.navbar-custom .dropdown-item:hover {
+    background: var(--primary-dark) !important;
+    color: var(--yellow-accent) !important;
+}
+
+/* Icon hamburger putih */
+.navbar-custom .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .hero h1,
+        .hero p {
+            color: var(--primary-light);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Utility Styles */
+        .btn-custom-yellow {
+            background-color: var(--yellow-accent);
+            color: var(--primary-dark);
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-custom-yellow:hover {
+            background-color: var(--primary-red);
+            color: var(--primary-light);
+        }
+
+        /* Section Styling */
+        .section-padding {
+            padding: 80px 0;
+        }
+        .bg-soft {
+            background-color: var(--soft-bg);
+        }
+
+        /* Keahlian Card */
+        .main-card {
+            border-radius: 0.75rem; /* radius-md */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .main-card:hover {
+            transform: translateY(-8px);
+        }
+        .main-card .image-area img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 992px) {
+            .main-card .image-area img {
+                height: 250px;
+            }
+        }
+
+        /* Layanan Cards */
+        .card-service {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        .card-service .icon {
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: var(--primary-red);
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            border-left: 4px solid var(--primary-red);
+            border-radius: 0.5rem;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+        .testimonial-rating {
+            color: #ffc800;
+        }
+
+        /* FAQ */
+      .faq-accordion {
+    max-width: 800px;
+}
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.0);
+            position: relative;
+        }
+        footer .col-title {
+            color: var(--yellow-accent);
+        }
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: var(--yellow-accent);
+        }

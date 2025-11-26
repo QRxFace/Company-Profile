@@ -13,6 +13,7 @@
             /* Ganti dengan path gambar hero.svg yang sebenarnya */
             background: url('/assets/img/hero.svg') center center no-repeat fixed;
             background-size: cover;
+         
         }
 
         /* Overlay Merah di Latar Belakang */
@@ -20,14 +21,25 @@
             content: "";
             position: fixed;
             inset: 0;
-            background: rgba(255, 0, 0, 0.65);
+            background: rgba(255, 0, 0, 0.30);
             z-index: -1;
         }
 
         /* Navbar Kustom */
-        .navbar-custom {
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
+    /* Dropdown menu merah */
+.navbar-custom .dropdown-menu {
+    --bs-dropdown-bg: var(--primary-red) !important;
+    --bs-dropdown-border-color: transparent !important;
+}
+
+.navbar-custom .dropdown-item {
+    color: #fff !important;
+}
+
+.navbar-custom .dropdown-item:hover {
+    background: var(--primary-red) !important ;
+    color: var(--yellow-accent) !important;
+}
         .navbar-custom.scrolled {
             background-color: var(--primary-red) !important;
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
@@ -36,7 +48,10 @@
         .navbar-custom .navbar-brand {
             color: var(--primary-light) !important;
         }
-
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+    color: var(--yellow-accent) !important;
+}
         /* Hero Section */
         .hero {
             height: 100vh;
@@ -44,7 +59,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding-top: 56px; /* Kompensasi tinggi navbar */
+            
         }
         .hero h1,
         .hero p {
@@ -60,7 +75,7 @@
             transition: background-color 0.3s;
         }
         .btn-custom-yellow:hover {
-            background-color: var(--primary-dark);
+            background-color: var(--primary-red);
             color: var(--primary-light);
         }
 
@@ -129,16 +144,9 @@
         }
 
         /* FAQ */
-        .accordion-button:not(.collapsed) {
-            color: var(--primary-red);
-            background-color: var(--soft-bg);
-            box-shadow: none;
-        }
-        .accordion-button:focus {
-            box-shadow: none;
-            outline: none;
-            border-color: transparent;
-        }
+      .faq-accordion {
+    max-width: 800px;
+}
 
         /* Footer */
         footer {
