@@ -11,7 +11,7 @@
         /* Latar Belakang Body Kustom (Mengganti overlay merah di body) */
         body {
             /* Ganti dengan path gambar hero.svg yang sebenarnya */
-            background: url('/assets/img/hero.svg') center center no-repeat fixed;
+            background: url('/assets/img/hero.jpg') center center no-repeat fixed;
             background-size: cover;
          
         }
