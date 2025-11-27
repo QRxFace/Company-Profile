@@ -1,160 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <!-- link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layanan - Pusat UPA Laboratorium Biosain</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS KUSTOM -->
     <link rel="stylesheet" href="../assets/css/layanan.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <div data-include="../partials/navbar.html"></div>
 
-    <!-- isi -->
-<main id="main-content" class="main-layout">
-  <!-- HERO / Banner -->
-  <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <h2 class="kicker">
-        Mendukung <span class="accent">Inovasi</span><br>
-        Sains & Industri<br>
-        Fasilitas <span class="accent">Modern</span><br>
-        Tenaga Ahli <span class="accent">Profesional</span>
-      </h2>
-    </div>
+<main>
+  <!--navbar  -->
+  <div data-include="../partials/navbar.html"></div>
 
-    <div class="hero-right">
-      <img src="../assets/img/gal3.jpeg" alt="Laboratorium">
-    </div>
-  </div>
-</section>
+    <!-- ====================== HERO SECTION ====================== -->
+    <section class="hero-section container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-text">
 
+                <h1 class="fw-bold">
+                    Mendukung <span class="text-red">Inovasi</span><br>
+                    <span class="text-blue">Sains</span> & Industri<br>
+                    Fasilitas <span class="text-blue">Modern</span><br>
+                    Tenaga Ahli <span class="text-red">Profesional</span>
+                </h1>
 
-  <!-- SECTION PENGERTIAN -->
-  <section class="section-info">
-    <div class="info-inner">
-      <p class="lead">
-        Laboratorium Biosains menyediakan layanan terpadu untuk mendukung riset, pengembangan produk,
-        dan peningkatan kompetensi di bidang sains dan bioteknologi.
-      </p>
-      <p class="muted">
-        Bergabunglah bersama kami, wujudkan kontribusi nyata bagi kemajuan riset dan 
-        <span class="accent">inovasi Indonesia</span>.
-      </p>
-    </div>
-  </section>
+                <!-- dekor -->
+                <div class="decor-grid"></div>
+            </div>
 
-  <!-- BENEFIT / Highlights -->
-  <section id="benefits" class="section section--padded">
-    <h2 class="section-title">Benefit menggunakan <span class="accent">Layanan</span></h2>
-
-    <div class="benefit-grid" role="list">
-      <article class="benefit-card" role="listitem">
-        <figure class="card-media"><img alt="placeholder" src="../assets/img/gallery1.jpeg" data-src="" /></figure>
-        <div class="card-body">
-          <h3>Tenaga Ahli Berpengalaman</h3>
-          <p>Dipandu instruktur profesional dengan pengalaman industri dan riset.</p>
+            <div class="col-lg-6">
+                <img src="assets/hero.jpg" class="img-fluid rounded shadow" alt="">
+            </div>
         </div>
-      </article>
+    </section>
 
-      <article class="benefit-card" role="listitem">
-        <div class="card-body">
-          <h3>Fasilitas Modern</h3>
-          <p>Mendukung proses riset dan pengujian yang optimal.</p>
+
+    <!-- ====================== INTRO SECTION ====================== -->
+    <section class="intro-section py-5">
+        <div class="container text-center">
+            <p>
+                Laboratorium Biosains menyediakan layanan terpadu untuk mendukung riset, pengembangan produk, dan peningkatan kompetensi di bidang sains dan bioteknologi...
+            </p>
+            <p>
+                Laboratorium Biosains berkomitmen menjadi pusat unggulan...
+            </p>
+            <p>
+                Bergabunglah bersama kami, wujudkan kontribusi nyata bagi kemajuan riset dan 
+                <span class="text-red fw-bold">Inovasi Indonesia</span>.
+            </p>
         </div>
-      </article>
+    </section>
 
-      <article class="benefit-card" role="listitem">
-        <div class="card-body">
-          <h3>Akurasi & SOP Tinggi</h3>
-          <p>Proses berbasis SOP, hasil yang terjamin.</p>
+
+    <!-- ====================== BENEFIT SECTION ====================== -->
+    <section class="benefit-section container py-5">
+        <h2 class="text-center fw-bold mb-5">
+            Benefit menggunakan <span class="text-red">Layanan</span>
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- kiri gambar -->
+            <div class="col-md-4">
+                <div class="benefit-img-card">
+                    <img src="assets/benefit1.jpg" class="img-fluid" alt="">
+                    <p class="overlay-text">Tenaga Ahli Berpengalaman...</p>
+                </div>
+            </div>
+
+            <!-- fasilitas modern -->
+            <div class="col-md-4">
+                <div class="benefit-box">
+                    <h5>Fasilitas Modern.</h5>
+                    <p>Mendukung proses riset dan pengujian yang optimal.</p>
+                    <div class="decor-small"></div>
+                </div>
+            </div>
+
+            <!-- kanan gambar -->
+            <div class="col-md-4">
+                <div class="benefit-img-card">
+                    <img src="assets/benefit2.jpg" class="img-fluid" alt="">
+                    <p class="overlay-text">Layanan dapat disesuaikan...</p>
+                </div>
+            </div>
+
+            <!-- card bawah -->
+            <div class="col-md-6">
+                <div class="benefit-box-left">
+                    <h5>Akurasi dan Standar Tinggi.</h5>
+                    <p>Proses berbasis SOP hasil yang terjamin.</p>
+                    <div class="decor-small"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="decor-box"></div>
+            </div>
+
         </div>
-      </article>
+    </section>
 
-      <article class="benefit-card" role="listitem">
-        <figure class="card-media"><img alt="placeholder" src="../assets/img/biosains.polije.2.png" data-src="" /></figure>
-        <div class="card-body">
-          <h3>Customized Service</h3>
-          <p>Layanan dapat disesuaikan kebutuhan akademik maupun industri.</p>
+
+    <!-- ====================== LAYANAN SECTION ====================== -->
+    <section class="layanan-section py-5">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                <span class="text-red">Layanan</span> Kami
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Card Pelatihan -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card shadow-sm p-4 rounded">
+                        <h4 class="fw-bold">Pelatihan</h4>
+                        <p>
+                            Program pelatihan kami dirancang untuk mahasiswa, peneliti muda, dan tenaga laboratorium industri...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Pengujian -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card shadow-sm p-4 rounded">
+                        <h4 class="fw-bold">Pengujian</h4>
+                        <p>
+                            Kami menyediakan layanan pengujian sampel biologis dan material lain dengan protokol...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Konsultasi -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card shadow-sm p-4 rounded">
+                        <h4 class="fw-bold">Konsultasi</h4>
+                        <p>
+                            Program pelatihan kami dirancang untuk mahasiswa, peneliti muda, dan tenaga laboratorium industri...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Penelitian -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="service-card shadow-sm p-4 rounded">
+                        <h4 class="fw-bold">Penelitian</h4>
+                        <p>
+                            Program pelatihan kami dirancang untuk mahasiswa, peneliti muda, dan tenaga laboratorium industri...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <!-- LAYANAN KAMI -->
-  <section id="services" class="section section--light section--padded">
-    <h2 class="section-title center">Layanan Kami</h2>
 
-    <div class="services-grid" role="list">
-      <article class="service-card" role="listitem" tabindex="0" aria-labelledby="srv1">
-        <header class="service-head">
-          <span class="service-icon" aria-hidden="true">🔬</span>
-          <h3 id="srv1">Pelatihan</h3>
-        </header>
-        <p>
-          Program pelatihan kami dirancang untuk mahasiswa, peneliti muda, dan tenaga laboratorium industri.
-          Modul mencakup teknik dasar hingga evaluasi kompetensi.
+    <!-- ====================== CTA SECTION ====================== -->
+    <section class="cta-section py-5 text-center">
+        <h2 class="fw-bold">
+            Siap <span class="text-red">berkontribusi</span> untuk<br>Indonesia?
+        </h2>
+
+        <p class="my-3">
+            Ingin berkontribusi pada riset kami, menjadi mitra, mendukung pengembangan fasilitas...
         </p>
-      </article>
 
-      <article class="service-card" role="listitem" tabindex="0" aria-labelledby="srv2">
-        <header class="service-head">
-          <span class="service-icon" aria-hidden="true">🧪</span>
-          <h3 id="srv2">Pengujian</h3>
-        </header>
-        <p>
-          Layanan pengujian sampel biologis dan material dengan protokol terstandar—laporan terperinci & sertifikat.
-        </p>
-      </article>
+        <a href="#" class="btn btn-danger px-4 py-2 fw-bold rounded-pill">Daftar Sekarang</a>
 
-      <article class="service-card" role="listitem" tabindex="0" aria-labelledby="srv3">
-        <header class="service-head">
-          <span class="service-icon" aria-hidden="true">💬</span>
-          <h3 id="srv3">Konsultasi</h3>
-        </header>
-        <p>
-          Konsultasi teknis, desain eksperimen, serta evaluasi hasil riset untuk mendukung proyek akademik & industri.
-        </p>
-      </article>
-
-      <article class="service-card" role="listitem" tabindex="0" aria-labelledby="srv4">
-        <header class="service-head">
-          <span class="service-icon" aria-hidden="true">🔎</span>
-          <h3 id="srv4">Peneletian</h3>
-        </header>
-        <p>
-          Fasilitas untuk penelitian terstruktur, dukungan metodologi dan kolaborasi penelitian.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta" class="section section-cta">
-    <div class="cta-inner">
-      <h3 class="cta-title">Siap <span class="accent">berkontribusi</span> untuk Indonesia?</h3>
-      <p class="cta-text">
-        Ingin berkontribusi pada riset kami, menjadi mitra, atau mendukung pengembangan <br>fasilitas? Kami membuka peluang kolaborasi, sponsorship peralatan, dan program magang <br>untuk mahasiswa. Kontribusi anda mempercepat inovasi dan penerapan sains yang <br> berkelanjutan
-      </p>
-      <div class="cta-actions">
-        <button id="btn-signup" class="btn btn-primary" type="button">Daftar Sekarang</button>
-      </div>
-    </div>
-  </section>
+        <div class="cta-decor"></div>
+    </section>
 </main>
+<!-- foooter -->
+<div data-include="../partials/footer.html"></div>
+<!-- script -->
 
-    <!-- footer -->
-    <div data-include="../partials/footer.html"></div>
-
-    <!-- Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/components.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/js/components.js"></script>
 </body>
-
 </html>
