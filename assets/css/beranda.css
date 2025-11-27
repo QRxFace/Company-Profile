@@ -121,12 +121,6 @@
     margin: 40px 0;
 }
 
-.stats-section .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(174, 0, 0, 0.6); /* biru gelap transparan */
-    backdrop-filter: blur(2px);
-}
 
 .stats-content {
     position: relative;

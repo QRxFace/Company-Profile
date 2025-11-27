@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-    <html lang="id">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Laboratorium Biosain - Polije</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-            <link rel="stylesheet" href="../assets/css/beranda.css">
-        </head>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorium Biosain - Polije</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/beranda.css">
+</head>
 <body>
-              
 <!-- Navbar  -->
 <nav class="navbar navbar-expand-lg bg-transparent navbar-dark sticky-top navbar-custom" id="main-nav">
     <div class="container-fluid mx-3">
@@ -19,7 +18,8 @@
                 <small class="subtitle" style="font-size: 0.8em;">Politeknik Negeri Jember</small>
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -31,7 +31,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Profile
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-danger">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="tentang.html">Tentang</a></li>
                         <li><a class="dropdown-item" href="galeri.html">Gallery</a></li>
                     </ul>
@@ -40,7 +40,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Layanan
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-danger">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="layanan.html">Layanan</a></li>
                         <li><a class="dropdown-item" href="fasilitas.html">Fasilitas</a></li>
                     </ul>
@@ -59,30 +59,32 @@
 <!-- Hero Header -->
 <header class="hero">
     <div class="hero-content">
-        <h1 class="display-4 fw-bold">PUSAT UPA Lab Biosain</h1>
+        <h1 class="fw-bold fs-1">PUSAT UPA Lab Biosain</h1>
         <p class="lead">
             Selamat datang di laboratorium Biosain, Politeknik Negeri Jember. Kami harap Anda mendapatkan informasi dalam menjelajahi situs web kami mengenai profil lab, layanan, dan menemukan berbagai aspek yang tersedia termasuk informasi kontak laboratorium.
         </p>
     </div>
 </header>
 
-<section class="stats-section pt-2 py-5">
-    <div class="container">
+<!-- Stats Section -->
+<section class="stats-section pt-2 py-5 position-relative">
+    <div class="overlay"></div>
+    <div class="container stats-content">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="stats-box p-4 rounded text-center" style="background-color: rgba(152, 0, 0, 0.85);">
+                <div class="stats-box p-4 rounded text-center bg-opacity-75 bg-danger">
                     <div class="row">
                         <div class="col-md-4 mb-3 mb-md-0">
-                            <h2 class="text-white fw-bold">95%</h2>
-                            <p class="text-white mb-0">Tingkat Kepuasan Pengguna</p>
+                            <h2 class="stat-number">95%</h2>
+                            <p class="stat-text mb-0">Tingkat Kepuasan Pengguna</p>
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
-                            <h2 class="text-white fw-bold">No. 1</h2>
-                            <p class="text-white mb-0">Pusat Laboratorium Polije</p>
+                            <h2 class="stat-number">No. 1</h2>
+                            <p class="stat-text mb-0">Pusat Laboratorium Polije</p>
                         </div>
                         <div class="col-md-4">
-                            <h2 class="text-white fw-bold">12+</h2>
-                            <p class="text-white mb-0">Jenis Layanan Pengujian dan Analisis</p>
+                            <h2 class="stat-number">12+</h2>
+                            <p class="stat-text mb-0">Jenis Layanan Pengujian dan Analisis</p>
                         </div>
                     </div>
                 </div>
@@ -112,8 +114,7 @@
     </div>
 </section>
 
-
-<!-- Layanan section -->
+<!-- Layanan Section -->
 <section class="layanan section-padding bg-soft">
     <div class="container">
         <div class="text-center mb-5">
@@ -122,31 +123,28 @@
                 Laboratorium Biosain Polije menyediakan layanan pengujian dan fasilitas penelitian untuk mendukung akademik, industri, dan lembaga penelitian dengan standar internasional.
             </p>
         </div>
-        
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <div class="card p-4 card-service shadow-sm h-100">
-                    <div class="icon mb-3">🔬</div>
+                    <div class="icon mb-3"></div>
                     <h3 class="h5 card-title fw-bold">Analisis Laboratorium</h3>
                     <p class="card-text text-muted">
                         Pengujian sampel biologis dan kimia menggunakan metode standar ISO/IEC 17025 untuk penelitian, kualitas produk, dan identifikasi biologis.
                     </p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4">
                 <div class="card p-4 card-service shadow-sm h-100">
-                    <div class="icon mb-3">🧬</div>
+                    <div class="icon mb-3"></div>
                     <h3 class="h5 card-title fw-bold">Praktikum & Penelitian</h3>
                     <p class="card-text text-muted">
                         Fasilitas laboratorium lengkap untuk kegiatan praktikum mahasiswa, penelitian kultur jaringan, mikrobiologi, dan bioteknologi tanaman.
                     </p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4">
                 <div class="card p-4 card-service shadow-sm h-100">
-                    <div class="icon mb-3">🧪</div>
+                    <div class="icon mb-3"></div>
                     <h3 class="h5 card-title fw-bold">Konsultasi Riset</h3>
                     <p class="card-text text-muted">
                         Pendampingan metodologi penelitian, interpretasi hasil, dan rekomendasi analisis ilmiah untuk mendukung penelitian akademik dan industri.
@@ -157,167 +155,92 @@
     </div>
 </section>
 
-
-<!-- Testimoni -->
-
-<!-- News Section -->
-<section class="news-section bg-light">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-12 d-flex justify-content-between align-items-center">
-        <h2 class="fw-bold text-dark">Baca Berita Terbaru Kami</h2>
-        <a href="https://polije.ac.id" class="text-primary text-decoration-none fw-bold text-dark">Baca selengkapnya &rarr;</a>
-      </div>
-      <div class="col-12">
-        <p class="text-dark">Berita dan informasi terbaru tentang kegiatan penelitian dan inovasi Laboratorium Biosain Polije.</p>
-      </div>
-    </div>
-
-    <!-- News Ticker -->
-    <div class="news-ticker py-3 text-white">
-      <div class="container overflow-hidden position-relative" style="height: 500px;">
-        <div id="news-track" class="d-flex position-absolute" style="left: 0;">
-          <!-- Berita 1 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Kultur Jaringan">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">20 Oktober 2025</small>
-                <h5 class="card-title text-center fw-bold">Pelatihan Teknik Kultur Jaringan Tanaman</h5>
-                <p class="card-text text-center text-muted">Mahasiswa dan peneliti mempraktikkan teknik kultur jaringan tanaman secara in vitro, mendukung penelitian dan inovasi pertanian.</p>
-                <a class="d-block text-center mt-2" href="https://sipora.polije.ac.id/3377" target="_blank">Baca selengkapnya ></a>
-              </div>
+<section class="client-say container my-5">
+        <h2 class="mb-4">Testimoni kami</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card bg-darker h-100 border-secondary p-3">
+                    <p class="card-text fst-italic">"Laboratorium Biosain membantu kami menemukan fasilitas penelitian yang tepat! Prosesnya sangat lancar dan timnya sangat membantu."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="bg-secondary rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Dr. Andi Prasetyo</h6>
+                            <small class="text-secondary">Peneliti</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Berita 2 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Penyimpanan Mikroba">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">5 September 2025</small>
-                <h5 class="card-title text-center fw-bold">Penelitian Penyimpanan Mikroba Saccharomyces cerevisiae</h5>
-                <p class="card-text text-center text-muted">Laboratorium Biosain Polije melakukan penelitian penyimpanan mikroba dengan teknik kriogenik untuk meningkatkan viabilitas jangka panjang.</p>
-                <a class="d-block text-center mt-2" href="https://publikasi.polije.ac.id/index.php/jppl/article/download/3066/2018" target="_blank">Baca selengkapnya ></a>
-              </div>
+            <div class="col-md-4">
+                <div class="card bg-darker h-100 border-secondary p-3">
+                    <p class="card-text fst-italic">"Pelayanan yang efisien dan dapat diandalkan. Sangat merekomendasikan Laboratorium Biosain bagi siapa pun yang ingin melakukan penelitian ilmiah."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="bg-secondary rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Siti Rahmawati</h6>
+                            <small class="text-secondary">Mahasiswa/Mahasiswi Peneliti</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Berita 3 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Sistem Inventarisasi">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">12 Agustus 2025</small>
-                <h5 class="card-title text-center fw-bold">Sistem Inventarisasi Bahan Kimia di Laboratorium Biosain</h5>
-                <p class="card-text text-center text-muted">Mahasiswa Jurusan Informatika mengembangkan sistem inventarisasi bahan kimia untuk pengelolaan laboratorium yang lebih modern dan efisien.</p>
-                <a class="d-block text-center mt-2" href="https://sipora.polije.ac.id/23242" target="_blank">Baca selengkapnya ></a>
-              </div>
+            <div class="col-md-4">
+                <div class="card bg-darker h-100 border-secondary p-3">
+                    <p class="card-text fst-italic">"Menjadi penasihat terpercaya sepanjang proses penelitian. Timnya sangat profesional dan berpengetahuan luas."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="bg-secondary rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Dr. Budi Santoso</h6>
+                            <small class="text-secondary">Dosen/Peneliti</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Berita 1 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Kultur Jaringan">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">20 Oktober 2025</small>
-                <h5 class="card-title text-center fw-bold">Pelatihan Teknik Kultur Jaringan Tanaman</h5>
-                <p class="card-text text-center text-muted">Mahasiswa dan peneliti mempraktikkan teknik kultur jaringan tanaman secara in vitro, mendukung penelitian dan inovasi pertanian.</p>
-                <a class="d-block text-center mt-2" href="https://sipora.polije.ac.id/3377" target="_blank">Baca selengkapnya ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Berita 2 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Penyimpanan Mikroba">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">5 September 2025</small>
-                <h5 class="card-title text-center fw-bold">Penelitian Penyimpanan Mikroba Saccharomyces cerevisiae</h5>
-                <p class="card-text text-center text-muted">Laboratorium Biosain Polije melakukan penelitian penyimpanan mikroba dengan teknik kriogenik untuk meningkatkan viabilitas jangka panjang.</p>
-                <a class="d-block text-center mt-2" href="https://publikasi.polije.ac.id/index.php/jppl/article/download/3066/2018" target="_blank">Baca selengkapnya ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Berita 3 -->
-          <div class="news-item mx-2" style="min-width: 300px;">
-            <div class="card h-100 shadow-sm">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg/1280px-Gedung_Jurusan_Kesehatan_Politeknik_Jember.jpg" class="card-img-top" alt="Sistem Inventarisasi">
-              <div class="card-body">
-                <small class="text-muted d-block mb-2 text-center">Berita</small>
-                <small class="text-muted d-block mb-3 text-center">12 Agustus 2025</small>
-                <h5 class="card-title text-center fw-bold">Sistem Inventarisasi Bahan Kimia di Laboratorium Biosain</h5>
-                <p class="card-text text-center text-muted">Mahasiswa Jurusan Informatika mengembangkan sistem inventarisasi bahan kimia untuk pengelolaan laboratorium yang lebih modern dan efisien.</p>
-                <a class="d-block text-center mt-2" href="https://sipora.polije.ac.id/23242" target="_blank">Baca selengkapnya ></a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 </section>
 
+<!-- CTA Section -->
+<section class="bg-danger text-white text-center py-5">
+    <div class="container">
+        <h3 class="mb-3 fw-bold">Ingin Menggunakan Layanan laboratorium?</h3>
+        <a href="kontak.html" class="btn btn-custom-yellow fw-bold">Hubungi Sekarang</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<div data-include="../partials/footer.html"></div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/components.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.getElementById('main-nav');
+    function checkScroll() {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+    checkScroll();
+    window.addEventListener('scroll', checkScroll);
+});
+
+// News ticker
 const track = document.getElementById('news-track');
 const items = Array.from(track.children);
-
 function scrollNews() {
-  const itemWidth = items[0].offsetWidth + 16; // width + margin
-  track.style.transition = 'transform 1.5s linear';
-  track.style.transform = `translateX(-${itemWidth}px)`;
-
-  setTimeout(() => {
-    track.style.transition = 'none';
-    track.appendChild(items.shift()); // pindahkan berita pertama ke akhir
-    items.push(track.lastElementChild);
-    track.style.transform = 'translateX(0)';
-    setTimeout(scrollNews, 2000); // jeda sebelum geser berikutnya
-  }, 1600);
+    const itemWidth = items[0].offsetWidth + 16;
+    track.style.transition = 'transform 1.5s linear';
+    track.style.transform = `translateX(-${itemWidth}px)`;
+    setTimeout(() => {
+        track.style.transition = 'none';
+        track.appendChild(items.shift());
+        items.push(track.lastElementChild);
+        track.style.transform = 'translateX(0)';
+        setTimeout(scrollNews, 2000);
+    }, 1600);
 }
-
 setTimeout(scrollNews, 2000);
 </script>
-
-
-
-<section class="bg-primary text-white bg-danger text-center py-5">
-    <div class="container">
-            <h3 class="mb-3 fw-bold">Ingin Menggunakan Layanan laboratorium?</h3>
-            <a href="kontak.html" class="btn btn-custom-yellow  fw-bold">Hubungi Sekarang</a>
-        </div>
-    </section>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const nav = document.getElementById('main-nav');
-        
-        // Fungsi untuk menambahkan kelas 'scrolled'
-        function checkScroll() {
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        }
-
-        // Jalankan fungsi saat load dan scroll
-        checkScroll();
-        window.addEventListener('scroll', checkScroll);
-    });
-</script>
-    <!-- footer -->
-    <div data-include="../partials/footer.html"></div>
-
-    <!-- Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/components.js"></script>
 </body>
-
 </html>
