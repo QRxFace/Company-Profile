@@ -1,294 +1,283 @@
+/* ===================================
+   WARNA TEMA
+===================================== */
+:root {
+  --primary-red: #ff0000;
+  --primary-dark: #1d3557;
+  --primary-light: #ffffff;
+  --yellow-accent: #ffea00;
+  --soft-bg: #f8eaea;
+  --text-dark: #333333;
+}
 /* =====================================
-           WARNA TEMA
-        ===================================== */
-        :root {
-            --primary-red: #ff0000;
-            --primary-dark: #1D3557;
-            --primary-light: #ffffff;
-            --yellow-accent: #ffea00;
-            --soft-bg: #f8eaea;
-            --text-dark: #333333;
-        }
-
-        /* =====================================
-           BODY
-        ===================================== */
-        body {
-            font-family: 'Quicksand', sans-serif;
-            background-color: var(--soft-bg);
-            margin: 0;
-            padding: 0;
-        }
-
-        /* =====================================
-           NAVBAR
-        ===================================== */
-        .navbar-custom {
-            background-color: var(--primary-red) !important;
-            transition: 0.3s;
-        }
-
-        .navbar-custom .navbar-brand,
-        .navbar-custom .nav-link {
-            color: var(--primary-light) !important;
-        }
-
-        .navbar-custom .nav-link:hover {
-            color: var(--yellow-accent) !important;
-        }
-
-        .navbar-custom.scrolled {
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .navbar-custom .dropdown-menu {
-            background-color: var(--primary-red) !important;
-            border: none !important;
-        }
-
-        .navbar-custom .dropdown-item {
-            color: #fff !important;
-        }
-
-        .navbar-custom .dropdown-item:hover {
-            background-color: rgba(255, 255, 255, 0.1) !important;
-            color: var(--yellow-accent) !important;
-        }
-
-        .navbar-toggler-icon {
-            filter: brightness(0) invert(1);
-        }
-
-        .offcanvas {
-            background-color: var(--primary-red) !important;
-        }
-
-        .offcanvas .btn-close {
-            filter: brightness(0) invert(1);
-        }
-
-        .offcanvas-title {
-            color: white;
-        }
-
-        /* =====================================
-           HERO SECTION
-        ===================================== */
-        .hero {
-            position: relative;
-            background: url('../img/hero.webp') center center/cover no-repeat;
-            padding: 120px 20px;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
+   BODY
+===================================== */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--soft-bg);
+  margin: 0;
+  padding: 0;
+}
+/* =====================================
+   NAVBAR
+===================================== */
+.navbar-custom {
+  background-color: var(--primary-red) !important;
+  transition: 0.3s;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: var(--primary-light) !important;
+}
+.navbar-custom .nav-link:hover {
+  color: var(--yellow-accent) !important;
+}
+.navbar-custom.scrolled {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+.navbar-custom .dropdown-menu {
+  background-color: var(--primary-red) !important;
+  border: none !important;
+}
+.navbar-custom .dropdown-item {
+  color: #fff !important;
+}
+.navbar-custom .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--yellow-accent) !important;
+}
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+.offcanvas {
+  background-color: var(--primary-red) !important;
+}
+.offcanvas .btn-close {
+  filter: brightness(0) invert(1);
+}
+.offcanvas-title {
+  color: white;
+}
+/* =====================================
+   HERO SECTION
+===================================== */
+.hero {
+  position: relative;
+  background: url("../img/hero.webp") center center/cover no-repeat;
+  padding: 120px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
 .hero-section {
-    position: relative;
-    background: url('../img/hero.jpg') center center/cover no-repeat;
-    padding: 120px 20px;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  background: url("../img/hero.jpg") center center/cover no-repeat;
+  padding: 120px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-section::before {
-        content: "";
-        position: absolute;
-        inset: 0;        
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 100%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    127deg,
+    rgba(0, 0, 0, 0.6) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
 
-    z-index: 1;
+  z-index: 1;
 }
 
-   
-        .hero .hero-content {
-            position: relative;
-            z-index: 2;
-            color: white;
-        }
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
 
-        /* =====================================
-           SECTION GLOBAL
-        ===================================== */
-        .section-padding {
-            padding: 80px 0;
-        }
+/* =====================================
+   SECTION GLOBAL
+===================================== */
+.section-padding {
+  padding: 80px 0;
+}
 
-        .bg-soft {
-            background-color: var(--soft-bg);
-        }
+.bg-soft {
+  background-color: var(--soft-bg);
+}
 
-        .text-red {
-            color: var(--primary-red) !important;
-        }
+.text-red {
+  color: var(--primary-red) !important;
+}
 
-        .text-green-dark {
-            color: var(--primary-dark) !important;
-        }
+.text-green-dark {
+  color: var(--primary-dark) !important;
+}
 
-        /* =====================================
+/* =====================================
            STATS SECTION
         ===================================== */
-        .stats-section {
-            position: relative;
-            padding: 40px 0;
-            margin-top: -80px;
-            z-index: 10;
-        }
+.stats-section {
+  position: relative;
+  padding: 40px 0;
+  margin-top: -80px;
+  z-index: 10;
+}
 
-        .section-red-bg {
-            background-color: var(--primary-red) !important;
-            transition: 0.3s;
-        }
+.section-red-bg {
+  background-color: var(--primary-red) !important;
+  transition: 0.3s;
+}
 
-        .stat-number {
-            font-size: 48px;
-            font-weight: 800;
-            color: white;
-            margin-bottom: 10px;
-        }
+.stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+}
 
-        .stat-text {
-            font-size: 18px;
-            color: white;
-        }
+.stat-text {
+  font-size: 18px;
+  color: white;
+}
 
-        /* =====================================
+/* =====================================
            ABOUT SECTION
         ===================================== */
-        .about-section img {
-            max-height: 350px;
-            object-fit: cover;
-        }
+.about-section img {
+  max-height: 350px;
+  object-fit: cover;
+}
 
-        /* =====================================
+/* =====================================
            BUTTON CUSTOM
         ===================================== */
-        .btn-custom-yellow {
-            background-color: var(--yellow-accent);
-            color: var(--text-dark);
-            border: none;
-            padding: 12px 30px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+.btn-custom-yellow {
+  background-color: var(--yellow-accent);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
-        .btn-custom-yellow:hover {
-            background-color: #ffd700;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 234, 0, 0.4);
-        }
+.btn-custom-yellow:hover {
+  background-color: #ffd700;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 234, 0, 0.4);
+}
 
-        /* =====================================
+/* =====================================
            CARD LAYANAN
         ===================================== */
-        .card-service {
-            border: none;
-            transition: 0.3s ease;
-            background-color: white;
-        }
+.card-service {
+  border: none;
+  transition: 0.3s ease;
+  background-color: white;
+}
 
-        .card-service:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0.5rem 1.5rem rgba(255, 0, 0, 0.2);
-        }
+.card-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(255, 0, 0, 0.2);
+}
 
-        /* =====================================
+/* =====================================
            TESTIMONIALS
         ===================================== */
-        .card-hover-effect {
-            transition: 0.3s ease;
-            border: 2px solid #e0e0e0;
-        }
+.card-hover-effect {
+  transition: 0.3s ease;
+  border: 2px solid #e0e0e0;
+}
 
-        .card-hover-effect:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-            border-color: var(--primary-red);
-        }
-
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+  border-color: var(--primary-red);
+}
 
 /* ICON */
-  .benefit-icon-white {
-     font-size: 2.5rem;
-     color: var(--primary-light);
-     margin-bottom: 20px;
-   }
-   .benefit-icon-red {
-     font-size: 2.5rem;
-     color: var(--primary-red);
-     margin-bottom: 20px;
-   }
+.benefit-icon-white {
+  font-size: 2.5rem;
+  color: var(--primary-light);
+  margin-bottom: 20px;
+}
+.benefit-icon-red {
+  font-size: 2.5rem;
+  color: var(--primary-red);
+  margin-bottom: 20px;
+}
 
-   .card-box {
-    transition: 0.3s ease;
-    border-radius: 12px !important;
+.card-box {
+  transition: 0.3s ease;
+  border-radius: 12px !important;
 }
 
 .card-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.15) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
 }
 
-        /* =====================================
+/* =====================================
 FOOTER
         ===================================== */
 footer {
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
 }
 
 footer .col-title {
-    color: var(--yellow-accent);
+  color: var(--yellow-accent);
 }
 
 footer a {
-    color: var(--primary-light);
-    text-decoration: none;
+  color: var(--primary-light);
+  text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--yellow-accent);
+  color: var(--yellow-accent);
 }
 
-        /* =====================================
+/* =====================================
            RESPONSIVE
         ===================================== */
-        @media (max-width: 768px) {
-            .stats-section {
-                margin-top: -40px;
-            }
-            
-            .stat-number {
-                font-size: 36px;
-            }
-            
-            .stat-text {
-                font-size: 14px;
-            }
+@media (max-width: 768px) {
+  .stats-section {
+    margin-top: -40px;
+  }
 
-            .hero {
-                min-height: 50vh;
-                padding: 80px 20px;
-            }
+  .stat-number {
+    font-size: 36px;
+  }
 
-            .section-padding {
-                padding: 50px 0;
-            }
-        }
+  .stat-text {
+    font-size: 14px;
+  }
 
-        /* Logo placeholder */
-        .logo-placeholder {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #ffea00, #ffd700);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--primary-red);
-        }
+  .hero {
+    min-height: 50vh;
+    padding: 80px 20px;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+}
+
+/* Logo placeholder */
+.logo-placeholder {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ffea00, #ffd700);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary-red);
+}

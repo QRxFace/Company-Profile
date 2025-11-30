@@ -1,62 +1,72 @@
 <html lang="id">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fasilitas Laboratorium</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/fasilitas.css" />
     <style>
-      body {
-        background-color: #f8f1f1;
-      }
-      .hero-section { /* Ganti .hero menjadi .hero-section agar konsisten dengan markup Anda */
-        padding: 80px 0;
-        text-align: center;
-        background-color: #f8f1f1; /* Sesuaikan atau hapus jika sudah ada di global.css */
-      }
-      .category-title {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-weight: 700;
-        font-size: 1.8rem;
-        color: #333; /* Memberi warna agar menonjol */
-      }
-      .facility-card {
-        border-radius: 15px;
-        padding: 25px;
-        background: white;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        transition: 0.3s;
-        min-height: 100%; /* Pastikan kartu sejajar tingginya */
-        height: auto;
-      }
-      .facility-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      }
-      .facility-icon, .benefit-icon-red { /* Menggabungkan styling ikon */
-        font-size: 2rem;
-        margin-bottom: 10px;
-        color: #d14e64; /* Warna merah muda konsisten */
-      }
-      /* Styling tambahan untuk kartu laboratorium */
-      .lab-card-custom {
-        transition: 0.3s;
-      }
-      .lab-card-custom:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
-      }
+        body {
+            background-color: #f8f1f1;
+        }
+
+        .hero-section {
+            /* Ganti .hero menjadi .hero-section agar konsisten dengan markup Anda */
+            padding: 80px 0;
+            text-align: center;
+            background-color: #f8f1f1;
+            /* Sesuaikan atau hapus jika sudah ada di global.css */
+        }
+
+        .category-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #333;
+            /* Memberi warna agar menonjol */
+        }
+
+        .facility-card {
+            border-radius: 15px;
+            padding: 25px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            min-height: 100%;
+            /* Pastikan kartu sejajar tingginya */
+            height: auto;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .facility-icon,
+        .benefit-icon-red {
+            /* Menggabungkan styling ikon */
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #d14e64;
+            /* Warna merah muda konsisten */
+        }
+
+        /* Styling tambahan untuk kartu laboratorium */
+        .lab-card-custom {
+            transition: 0.3s;
+        }
+
+        .lab-card-custom:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+        }
     </style>
 </head>
+
 <body>
     <div data-include="partials/navbar.html"></div>
 
@@ -72,7 +82,7 @@
     <main class="content py-5">
         <div class="container">
 
-            <h2 class="category-title text-center">Instrumen Analisis</h2>
+            <h2 class="category-title text-center"> Instrumen Analisis</h2>
             <div class="row g-4 mb-5">
                 <div class="col-md-4">
                     <div class="facility-card">
@@ -80,7 +90,8 @@
                             <i class="fa-solid fa-microscope"></i>
                         </div>
                         <h5 class="fw-bold">Spektrofotometer UV-Vis</h5>
-                        <p class="text-muted">Mengukur absorbansi dan konsentrasi larutan berdasarkan spektrum UV-Vis.</p>
+                        <p class="text-muted">Mengukur absorbansi dan konsentrasi larutan berdasarkan spektrum UV-Vis.
+                        </p>
                     </div>
                 </div>
 
@@ -90,7 +101,8 @@
                             <i class="fa-solid fa-vial-circle-check"></i>
                         </div>
                         <h5 class="fw-bold">Microplate Reader</h5>
-                        <p class="text-muted">Membaca sinyal optik pada microplate untuk uji ELISA dan analisis enzim.</p>
+                        <p class="text-muted">Membaca sinyal optik pada microplate untuk uji ELISA dan analisis enzim.
+                        </p>
                     </div>
                 </div>
 
@@ -142,7 +154,8 @@
                             <i class="fa-solid fa-circle-notch"></i>
                         </div>
                         <h5 class="fw-bold">Microcentrifuge</h5>
-                        <p class="text-muted">Memisahkan sampel kecil dalam tabung reaksi menggunakan gaya sentrifugal.</p>
+                        <p class="text-muted">Memisahkan sampel kecil dalam tabung reaksi menggunakan gaya sentrifugal.
+                        </p>
                     </div>
                 </div>
 
@@ -207,7 +220,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Laboratorium Mikrobiologi</h5>
                             <p class="card-text text-muted">
-                                Difasilitasi dengan peralatan kultur, **inkubator**, **biosafety cabinet**, dan alat steril untuk praktikum mikroorganisme.
+                                Difasilitasi dengan peralatan kultur, **inkubator**, **biosafety cabinet**, dan alat
+                                steril untuk praktikum mikroorganisme.
                             </p>
                         </div>
                     </div>
@@ -219,7 +233,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Laboratorium Kimia</h5>
                             <p class="card-text text-muted">
-                                Dilengkapi instrumen gelas, alat titrasi, **hotplate**, serta peralatan analisis dasar untuk eksperimen kimia dan biokimia.
+                                Dilengkapi instrumen gelas, alat titrasi, **hotplate**, serta peralatan analisis dasar
+                                untuk eksperimen kimia dan biokimia.
                             </p>
                         </div>
                     </div>
@@ -231,7 +246,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Ruang Kelas Teori</h5>
                             <p class="card-text text-muted">
-                                Ruang kelas nyaman dilengkapi proyektor, papan tulis, dan kursi ergonomis untuk pembelajaran teori.
+                                Ruang kelas nyaman dilengkapi proyektor, papan tulis, dan kursi ergonomis untuk
+                                pembelajaran teori.
                             </p>
                         </div>
                     </div>
@@ -245,4 +261,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/components.js"></script>
 </body>
+
 </html>
