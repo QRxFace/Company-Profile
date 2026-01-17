@@ -1,30 +1,4 @@
-        /* Styling Tombol Layanan */
-        .service-button {
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-            color: white;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            border: none;
-        }
-        .service-button:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Warna Tombol Kustom */
-        .btn-red { background-color: #ff0000; } /* Merah */
 
-
-        /* Kotak Bayangan untuk Tombol */
-        .shadow-box {
-            background-color: white;
-            padding: 30px 15px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
         
         /* Styling Peta (untuk memastikan ukuran) */
         .map-frame {

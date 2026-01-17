@@ -9,7 +9,8 @@
 /* Card Modern */
 
 .vmg-img:hover, .vmg-img-right:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  transition: transform 0.3s  ease-out;
 }
 
 .vmg-img-right {
@@ -21,6 +22,7 @@
   transition: 0.35s;
   margin-bottom: 20px;
   box-shadow: 25px 30px rgb(255, 0, 0);
+  transition: transform 0.3s ease;
 }
 .vmg-img {
   width: 100%;
@@ -31,6 +33,7 @@
   transition: 0.35s;
   margin-bottom: 20px;
   box-shadow: -25px 30px rgb(255, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 /* Judul section */
