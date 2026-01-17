@@ -34,13 +34,18 @@
     width: 100%;
     
     /* Tinggi dan properti styling lainnya tetap dipertahankan */
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: 12px;
     background: #ECE6F0;
     box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+    transition: transform 0.3s ease;
 }
 
+.card-custom img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 /* ==========================
    Footer
 ========================== */
