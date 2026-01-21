@@ -125,6 +125,8 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.60) 100%, rgba(255, 255, 255
    .card-box {
     transition: 0.3s ease;
     border-radius: 12px !important;
+    width: 300px;
+    height: 300px;
 }
 
 .card-box:hover {
